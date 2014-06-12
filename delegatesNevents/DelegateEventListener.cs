@@ -5,15 +5,15 @@ public class DelegateEventListener : MonoBehaviour
 {
     void Start()
     {
-        UnitDelegateEvent.OnUnitSpawn += this.OnUnitSpawn;
+        UnitDelegateEvent.OnSpawnUnit += this.OnSpawnUnit;
     }
 
     void Destroy()
     {
-        UnitDelegateEvent.OnUnitSpawn -= this.OnUnitSpawn;
+        UnitDelegateEvent.OnSpawnUnit -= this.OnSpawnUnit;
     }
 
-    public void OnUnitSpawn( GameObject unit )
+    public void OnSpawnUnit( GameObject unit )
     {
         
     }
