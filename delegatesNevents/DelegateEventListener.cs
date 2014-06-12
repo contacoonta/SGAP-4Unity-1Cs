@@ -8,7 +8,7 @@ public class DelegateEventListener : MonoBehaviour
         UnitDelegateEvent.OnSpawnUnit += this.OnSpawnUnit;
     }
 
-    void Destroy()
+    void OnDestroy()
     {
         UnitDelegateEvent.OnSpawnUnit -= this.OnSpawnUnit;
     }
