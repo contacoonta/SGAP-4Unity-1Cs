@@ -5,21 +5,17 @@ public class DelegateEventListener : MonoBehaviour
 {
     void Start()
     {
-        UnitDelegateEvent.OnUnitSpawn += this.SpawnUnit;
+        UnitDelegateEvent.OnUnitSpawn += this.OnUnitSpawn;
     }
 
     void Destroy()
     {
-        UnitDelegateEvent.OnUnitSpawn -= this.SpawnUnit;
+        UnitDelegateEvent.OnUnitSpawn -= this.OnUnitSpawn;
     }
 
-    public void SpawnUnit( GameObject unit )
+    public void OnUnitSpawn( GameObject unit )
     {
-        // ui hp bar
+        
     }
 
-    public void DestroyUnit( GameObject unit )
-    {
-
-    }
 }
